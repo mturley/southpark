@@ -1,0 +1,14 @@
+<html>
+  <head><title>southpark</title></head>
+  <body>
+    <h1>Finding you a random South Park episode...</h1>
+    <h2>For another one, just press Back from the video player.</h2>
+    <script type="text/javascript">
+      var latestEpisode = 237; // change this Sep 25 2013 when Season 17 starts
+      var episode = Math.floor(Math.random()*latestEpisode) + 1;
+      setTimeout(function() {
+        document.location = "http://allsp.ch/l.php?id="+episode;
+      }, 500);
+    </script>
+  </body>
+</html>
